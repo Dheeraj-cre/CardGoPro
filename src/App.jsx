@@ -13,6 +13,11 @@ import SixthSection from "./components/Sixthsection";
 // Pages
 import CardDesignsPage from "./components/CardDesignsPage";
 
+// Temporary placeholder pages (you can replace with real ones)
+const FormPage = () => <h1>Form Page</h1>;
+const AboutPage = () => <h1>About Page</h1>;
+const AuthPage = () => <h1>Login / Signup Page</h1>;
+
 function Home() {
   return (
     <>
@@ -31,8 +36,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />     {/* ✅ root route */}
+        <Route path="/" element={<Home />} />
         <Route path="/card-designs" element={<CardDesignsPage />} />
+        <Route path="/form" element={<FormPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/auth" element={<AuthPage />} />
       </Routes>
     </Router>
   );

@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Navigation links */}
         <nav className={`nav-menu ${open ? "open" : ""}`}>
           <ul>
-            <li><Link to="/home" onClick={handleLinkClick}>Home</Link></li>
+            <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
             <li><Link to="/card-designs" onClick={handleLinkClick}>Card Designs</Link></li>
             <li><Link to="/form" onClick={handleLinkClick}>Form</Link></li>
             <li><Link to="/about" onClick={handleLinkClick}>About</Link></li>

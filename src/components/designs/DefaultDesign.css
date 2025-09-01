@@ -1,56 +1,110 @@
-.card-preview {
-  width: 350px;
-  min-height: 200px;
-  padding: 20px;
+.default-card {
+  display: flex;
+  width: 500px;
+  min-height: 220px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffffff, #f4f4f4);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  font-family: "Poppins", sans-serif;
-  color: #333;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.default-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Left Side */
+.default-card-left {
+  width: 35%;
+  background: linear-gradient(135deg, #233d63, #3b5998);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  color: #233d63;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.default-card-left .company {
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.card-preview:hover {
-  transform: translateY(-5px);
+/* Right Side */
+.default-card-right {
+  width: 65%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.card-preview h3 {
-  font-size: 1.4rem;
+.default-card-right .name {
+  font-size: 22px;
+  font-weight: bold;
   margin-bottom: 4px;
-  color: #222;
-  font-weight: 600;
+  color: #233d63;
 }
 
-.card-preview .role {
-  font-size: 0.95rem;
-  font-style: italic;
-  color: #666;
-  margin-bottom: 6px;
+.default-card-right .role {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
 }
 
-.card-preview .designation {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 10px;
+.default-card-right .designation {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
 }
 
-.card-preview hr {
-  border: none;
-  height: 1px;
-  background: #ddd;
-  margin: 12px 0;
-}
-
-.card-preview .company {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.card-preview p {
+.contact-info p {
+  font-size: 14px;
   margin: 4px 0;
-  font-size: 0.9rem;
   color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .default-card {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .default-card-left,
+  .default-card-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .default-card-left {
+    padding: 15px;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
 }
