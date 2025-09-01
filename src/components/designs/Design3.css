@@ -1,0 +1,100 @@
+.card-design3 {
+  width: 380px;
+  height: 220px;
+  margin: 20px auto;
+  perspective: 1000px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* ---------- FRONT SIDE ---------- */
+.card-design3-front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.6s ease;
+}
+
+.card-design3-left {
+  text-align: center;
+  flex: 1;
+}
+
+.card-design3-left img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.card-design3-left h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.card-design3-left p {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.card-design3-right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.card-design3-right h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-design3-right h2 span {
+  color: #00c6ff;
+}
+
+.card-design3-right span {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #ffdd57;
+}
+
+.card-design3-right p {
+  font-size: 0.85rem;
+  margin: 4px 0;
+}
+
+/* ---------- BACK SIDE ---------- */
+.card-design3-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/* --------- OPTIONAL HOVER FLIP --------- */
+.card-design3:hover .card-design3-front {
+  transform: rotateY(180deg);
+}
+
+.card-design3:hover .card-design3-back {
+  transform: rotateY(360deg);
+}

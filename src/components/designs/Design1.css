@@ -1,0 +1,66 @@
+.card-design1 {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Left Side */
+.card-design1-left {
+  width: 45%;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.card-design1-left .logo {
+  margin-bottom: 15px;
+}
+
+.card-design1-left .company {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card-design1-left .tagline {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Right Side */
+.card-design1-right {
+  width: 55%;
+  background: #233d63;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-design1-right .name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-design1-right .designation {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
